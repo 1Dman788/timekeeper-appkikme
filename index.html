@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Timekeeper Login</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Timekeeper Login</h1>
-    <form id="loginForm" class="form" method="post" autocomplete="off" onsubmit="return false;">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required autocomplete="username">
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required autocomplete="current-password">
-
-      <button type="submit">Login</button>
-    </form>
-    <p id="loginMessage" class="message"></p>
+  <div class="login-container">
+    <h2>Timekeeper Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="loginBtn">Login</button>
+    <p id="loginError" class="error"></p>
   </div>
 
-  <!-- Load Firebase libraries (compat builds for ease of use in plain HTML) -->
-  <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+  <!-- ✅ Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-auth-compat.js"></script>
 
-  <!-- Load our configuration and app logic -->
+  <!-- ✅ Config & App Logic -->
   <script src="firebaseConfig.js"></script>
   <script src="app.js"></script>
 </body>
