@@ -1,7 +1,7 @@
 // firebaseConfig.js
 //
 // This file contains the Firebase configuration used by your timekeeper app.
-// Do not modify other files — just replace this one with your Firebase settings.
+// Replace this file only — do not modify other files.
 
 const firebaseConfig = {
   apiKey: "AIzaSyDU7yhApAh4EbZYmIvqdefLy7xY6G2Ik7g",
@@ -13,5 +13,5 @@ const firebaseConfig = {
   measurementId: "G-9335TS6XZM"
 };
 
-// Make config globally accessible for the app.js to use
+// Expose to global scope so app.js can use it
 window.firebaseConfig = firebaseConfig;
