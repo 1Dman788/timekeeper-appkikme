@@ -1,38 +1,17 @@
 // firebaseConfig.js
 //
 // This file contains the Firebase configuration used by your timekeeper app.
-// To connect the app to your own Firebase project, replace the values of
-// the `firebaseConfig` object below with those from your Firebase console.
-//
-// IMPORTANT: Do not modify any other files when swapping out your
-// credentials. The rest of the application will automatically pick up
-// whatever is defined here.
+// Do not modify other files — just replace this one with your Firebase settings.
 
-// Example configuration (do not use in production):
-// const firebaseConfig = {
-//   apiKey: "YOUR_API_KEY",
-//   authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-//   projectId: "YOUR_PROJECT_ID",
-//   storageBucket: "YOUR_PROJECT_ID.appspot.com",
-//   messagingSenderId: "YOUR_SENDER_ID",
-//   appId: "YOUR_APP_ID"
-// };
-
-// Your Firebase configuration.
-// Replace the placeholder values below with your real Firebase project
-// credentials before deploying the app. For instructions on obtaining
-// these values see: https://firebase.google.com/docs/web/setup#config-object
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyDU7yhApAh4EbZYmIvqdefLy7xY6G2Ik7g",
+  authDomain: "uhhh-27210.firebaseapp.com",
+  projectId: "uhhh-27210",
+  storageBucket: "uhhh-27210.firebasestorage.app",
+  messagingSenderId: "869810449235",
+  appId: "1:869810449235:web:618ab8dadce7ea93490fa6",
+  measurementId: "G-9335TS6XZM"
 };
 
-// Expose the configuration on the global object. When using plain
-// <script> tags (non‑module), the properties defined here become
-// globally accessible as `window.firebaseConfig`.
+// Make config globally accessible for the app.js to use
 window.firebaseConfig = firebaseConfig;
