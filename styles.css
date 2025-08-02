@@ -1,0 +1,116 @@
+/* styles.css
+ * Basic styling for the Timekeeper application. The design uses
+ * flexbox and responsive layouts to ensure it works well on both
+ * desktop and mobile devices. Feel free to customise colours and
+ * sizing to match your organisation's branding.
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  height: 100%;
+}
+
+/* Container holds either the login form or the dashboard content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="number"],
+.form input[type="date"],
+.form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #0056b3;
+  outline: none;
+}
+
+.message {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+}
+
+/* Table styling for admin and employee views */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  word-break: break-word;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  th, td {
+    padding: 6px;
+  }
+}
